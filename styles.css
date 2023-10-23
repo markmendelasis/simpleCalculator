@@ -1,0 +1,132 @@
+div{
+    margin: 3px 0px ;
+}
+body{
+    height: 100%;
+    background-color: black;
+
+}
+
+h1{
+    text-align: center;
+}
+
+
+button{
+    font-size: x-large;
+    width: 10vh;
+    height: 10vh;
+    display: inline-block;
+    align-content: center;
+    
+}
+
+.buttonsOfCalculator{
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+
+} 
+
+.theButtons{
+    width: auto;
+    align-items: center;
+    display: block;
+    justify-content: center;
+    margin-bottom: 10px; /* Optional: Adds some space between button rows */
+}
+
+
+#buttonsOfCalculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+input{
+    font-size: 20px;
+    width: 51vh;
+    height: 7vh;
+}
+
+.inputCal{
+
+        display: flex;
+        justify-content: center; /* Centers the child elements horizontally */
+
+}
+
+
+.wholePage{
+
+        background-color: aqua;
+        width: 100%;
+        position: absolute;
+        font-size: 18px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.display {
+    background-color: #333;
+    color: white;
+    font-size: 2rem;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 20px;
+    transition: background-color 0.3s;
+}
+
+button.operator {
+    background-color: #ff9500;
+    color: white;
+}
+
+button.double {
+    grid-column: span 2;
+}
+
+button.ac {
+    background-color: #ff3b30;
+}
+
+button:active {
+    background-color: #bdc3c7;
+}
